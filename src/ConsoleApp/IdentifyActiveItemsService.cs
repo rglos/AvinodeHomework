@@ -28,7 +28,7 @@ namespace ConsoleApp
 
         private void CheckAndMarkActive(Item item, string pathToMatch, List<Item> parents)
         {
-            if (item.Path.Value.Equals(pathToMatch))
+            if (item.Path.Value.Equals(pathToMatch)) // match on case or not?  included slashes or not?
             {
                 item.Active = true;
                 // We need a way to mark the parents active as well - for now instead of traversing some fancy ancenstor(s) property
